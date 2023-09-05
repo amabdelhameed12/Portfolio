@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Portfolio</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+    
+    <style>
+       
+       *{
+        padding: 0;
+        margin: 0;
+       }
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+
+    #Sec1 
+    {
+        padding: 6rem 0;
+        text-align: center;
+        height:50% ;
+    }
+
+#Sec1 h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#Sec1 p {
+    font-size: 1.5rem;
+}
+
+    #about {
+        padding: 6rem ;
+    }
+
+#about p {
+    font-size: 1.2rem;
+}
+
+#projects {
+    padding: 6rem 0;
+}
+
+.card-deck .card {
+    border: none;
+}
+
+.card-deck .card:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-deck .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-deck .card-text {
+    font-size: 1rem;
+}
+
+#contact {
+    padding: 6rem ;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+#a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 100%;
+ height:  100%;
+}
+#asd{
+   display: flex;
+   justify-content: space-around;
+   align-items: end;
+}
+footer {
+   
+    height: 10%;
+	background-color: #333;
+	color: #ffffff;
+    padding: 20px;
+	 text-align: center;
+   
+ } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+        <section id="Sec1" class="bg-primary text-white" style="height: 50%;"  >
+            <div class="container"style="height: 100%;" >
+                <div class="row "style="height: 100%;">
+                    <div id="a" class="col-lg-12 d-flex justify-content-around flex-row" style="height: 100%;">
+                        <div style="height: 50%;">
+                          <h1>Welcome to My Portfolio</h1>
+                          <p>Here you can find information about me and my work.</p>
+                        </div>
+                        <div style="height: 100%; " id="asd">
+                          <img style="height: 100%;" src="./DSC_0001.JPG" alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>About Me</h2>
+                        <p>Hi,My name is Ahmed Mahmoud and I am a web designer and developer live in Sohag City. I have a passion for creating beautiful and functional websites.</p>
+                    </div>
+                    <div class="col-lg-6 shadow p-3 mb-5 bg-body rounded " >
+                       <ul style="text-align:start ;list-style-type: none;">
+                        <li><i class="fa-regular fa-envelope"></i> <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Ahmedaboabdo26@gmail.com</span></i></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Egypt , sohag</span></i></li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> 01123456789</span></i></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Projects</h2>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="./images.jfif"  height="100%" width="100%" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante euismod, lacinia sapien sed, commodo arcu. Nunc vel tortor blandit, aliquam enim vitae, accumsan nunc.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="./images (2).jfif"  height="100%" width="100%" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante euismod, lacinia sapien sed, commodo arcu. Nunc vel tortor blandit, aliquam enim vitae, accumsan nunc.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="./images (4).jfif" height="100%" width="100%" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante euismod, lacinia sapien sed, commodo arcu. Nunc vel tortor blandit, aliquam enim vitae, accumsan nunc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Contact Me</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+	<footer>
+		<p> 2023 Design by Ahmed Mahmoud. All rights reserved.</p>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/ab571136c6.js" crossorigin="anonymous"></script>
+</body>
+</html>
